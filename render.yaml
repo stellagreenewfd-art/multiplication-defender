@@ -1,0 +1,8 @@
+# Render Blueprint：乘法保卫战静态站
+services:
+  - type: web
+    name: multiplication-defender
+    runtime: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    pullRequestPreviewsEnabled: false
